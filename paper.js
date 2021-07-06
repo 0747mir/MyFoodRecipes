@@ -4,18 +4,16 @@ class paper
 
 	{
         var option={
-            isStatic: false,
-            restitution : 0.3,
-            friction: 0,
-            density: 1.2,
+            isStatic:false,
+            restitution :0.3,
+            friction:0,
+            density:1.2,
         }
 
         this.x=x;
 		this.y=y;
-        this.r=r;
         this.image=loadImage("paper.png")
-        this.body=Bodies.circle(this.x,this.y)
-        World.add(world, this.body);
+        World.add(world);
 
     }
         keyPressed() {
